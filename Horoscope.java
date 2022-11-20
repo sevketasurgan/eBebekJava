@@ -68,9 +68,12 @@ public class Horoscope {
         else if ((month == 11 && day >= 22 && day <= 30) || (month == 12 && day >= 1 && day <= 21))
             System.out.println("Yay");
         else
-            System.out.println("Hatalı Giriş");
+            isErr = true;
 
     }
+    
+    if(isErr)
+        System.out.println("Hatalı Giriş !");
 
 
 
